@@ -27,7 +27,7 @@ agent:
   max_concurrent_agents: 1
   max_turns: 20
 codex:
-  command: /home/f5/.local/bin/codex --config shell_environment_policy.inherit=all app-server
+  command: /home/f5/.local/bin/codex --config shell_environment_policy.inherit=all --config 'model="gpt-5.6-sol"' --config 'model_reasoning_effort="high"' app-server
   approval_policy: never
   thread_sandbox: workspace-write
   turn_sandbox_policy:
