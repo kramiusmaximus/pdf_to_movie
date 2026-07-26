@@ -1,0 +1,19 @@
+# Project-local tools and orchestration runtime state
+/.tools/
+/.symphony/
+
+# Local secrets and environment overrides
+.env
+.env.*
+!.env.example
+/orchestration/WORKFLOW.local.md
+
+# Generated artifacts
+/tmp/
+/output/
+
+# Common local noise
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
